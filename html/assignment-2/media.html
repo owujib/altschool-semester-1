@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favour Enang - Assignment 2 Media</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      .responsive-img {
+        width: 80%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .responsive-img {
+          width: 60%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .responsive-img {
+          width: 90%;
+        }
+
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Apply</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>About Me</h2>
+    <p>This page showcases different HTML media elements.</p>
+
+    <h3>Responsive Image</h3>
+    <a href="http://githib.com/owujib" target="_blank">
+      <figure title="Github Profile Image">
+        <img
+          class="responsive-img"
+          src="https://avatars.githubusercontent.com/u/48925577?v=4"
+          alt="Github Profile Image"
+        />
+        <figcaption>Github profile image</figcaption>
+      </figure>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/favour-enang-720152213"
+      target="_blank"
+    >
+      <figure title="Linked-in Profile Image">
+        <img
+          class="responsive-img"
+          src="https://media.licdn.com/dms/image/v2/C5603AQHDxSsEx9lWAg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1642459080893?e=1744243200&v=beta&t=2VwE2IHmxsqe_1jeB2e-l2MYR09GL0Q3Q8jm7n4Fb9s"
+          alt="Github Profile Image"
+        />
+        <figcaption>Linked-in profile image</figcaption>
+      </figure>
+    </a>
+
+    <figure title="Image of Favour">
+      <img class="responsive-img" src="images/img-1.jpeg" alt="My image" />
+      <figcaption>My image</figcaption>
+    </figure>
+  </body>
+</html>
