@@ -64,6 +64,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Responsive css for tablet screens */
 @media (max-width: 768px) {
   .hero {
     width: 100%;
@@ -85,6 +86,7 @@ body {
   }
 }
 
+/* responsive css for mobile screens */
 @media (max-width: 480px) {
   .operations-section {
     margin: 1px;

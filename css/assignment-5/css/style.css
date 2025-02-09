@@ -90,6 +90,29 @@ h1 {
   gap: 10px;
   margin-bottom: 20px;
 }
+.price {
+  font-weight: 300;
+  font-family: 'Lato', serif;
+  font-style: normal;
+}
+.price > sup {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Lato', serif;
+  font-style: normal;
+}
+.price > span {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Lato', serif;
+  font-style: normal;
+}
+
+.price-period-container {
+  display: flex;
+  align-items: flex-end;
+  font-weight: lighter;
+}
 
 .section-number {
   width: 24px;
@@ -187,7 +210,7 @@ input {
 }
 
 .feature-list li::before {
-  content: '✓';
+  /* content: '✅'; */
   font-weight: bold;
 }
 

@@ -11,17 +11,92 @@ body {
   color: #333;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.nav-link.features {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link.features::after {
+  content: '▼';
+  font-size: 0.8rem;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-btn {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.try-btn {
+  background: #0066ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.try-btn:hover {
+  background: #0052cc;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
+.hero .container {
+  max-width: 80%;
+}
 
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: #f8f9fb;
+  /* padding: 80px 20px; */
+  background-image: url('../images/hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .hero h1 {
@@ -41,6 +116,51 @@ body {
   text-decoration: none;
   border-radius: 25px;
   margin: 20px 0;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-cta-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0066ff;
+}
+.lead {
+  line-height: 30px !important;
+  text-align: center;
+  color: #0052cc;
+  min-width: 40% !important;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.info-section-card {
+  width: 70%;
+  border: 1px solid #0052cc;
+  height: 200px;
+  margin: 20px 0px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  z-index: 50;
+}
+
+.info-vector {
+  position: absolute;
+  z-index: -300;
+  left: 15%;
+  bottom: -20px;
 }
 
 /* Stats Section */
@@ -64,7 +184,6 @@ body {
 
 /* Features Section */
 .features {
-  padding: 60px 0;
   text-align: center;
 }
 
